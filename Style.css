@@ -44,6 +44,7 @@ main>button:active{
 .Libro{
     background-color: white;
     padding: 10px;
+    margin-bottom: 5px;
     border-radius: 12px;
 }
 .Libro>p{
@@ -54,10 +55,14 @@ main>button:active{
     font-size: 1.45rem;
     border: none;
     width: 75%;
-    background-color: red;
-    color: black;
     border-radius: 20px;
     padding: 10px 0px;
+    margin-bottom: 25px;
+    background-color: #a9aeb4;
+}
+.Libro>.Eliminar{
+    background-color:red;
+    color: black;
 }
 .Libro>button:active{
     opacity: 0.5;
