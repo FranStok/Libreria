@@ -21,11 +21,11 @@ main{
 }
 main>button{
     margin: 15px;
+    padding: 10px 15px;
     font-size: 1.5rem;
     border:none;
     font-family: inherit;
     font-weight: 900;
-    padding: 10px 15px;
     background-color: #22d3ee;
     color: white;
     border: none;
@@ -33,6 +33,12 @@ main>button{
 }
 main>button:active{
     opacity: 0.5;
+}
+form{
+    display: none;
+}
+input{
+    margin: 3px;
 }
 .Libros{
     padding: 40px 60px;
