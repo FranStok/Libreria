@@ -37,8 +37,27 @@ main>button:active{
 form{
     display: none;
 }
+label{
+    font-size: 1.2rem;
+}
 input{
-    margin: 3px;
+    margin: 8px;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border:2px solid #D1D1D1;
+}
+input:focus{
+    outline: none;
+    border:2px solid rgb(109, 209, 209);
+}
+.Submit{
+    padding: 10px 30px;
+    font-weight: 900;
+    background-color: 	rgb(0,191,255);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
 }
 .Libros{
     padding: 40px 60px;
@@ -53,6 +72,7 @@ input{
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 12px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .Libro>p{
     margin-top: 5px;

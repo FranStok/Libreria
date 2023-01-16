@@ -62,7 +62,10 @@ Submit.addEventListener("click",(event)=>{
     let Titulo=document.querySelector("#Titulo"),
     Autor=document.querySelector("#Autor"),
     Paginas=document.querySelector("#Paginas");
-    NuevoLibro(Titulo.value,Autor.value,Paginas.value);
+    if(Titulo.value!="" && Autor.value!="" && Paginas.value!="")
+        NuevoLibro(Titulo.value,Autor.value,Paginas.value);
+    else
+        alert("No se ingresaron todos los datos del libro")
     let form=document.querySelector("form");
     form.style.display="none";
     let Agregar=document.querySelector(".Agregar");
@@ -71,6 +74,7 @@ Submit.addEventListener("click",(event)=>{
     Autor.value="";
     Titulo.value="";
     Paginas.value="";
+    
 })
 
 /*Muestra el formulario cuando se presiona agregar libro*/
