@@ -1,11 +1,11 @@
 let Libreria=[]
-
+/*
 function Libro(Titulo,Autor,Paginas,Leido){
     this.Autor=Autor
     this.Titulo=Titulo
     this.Paginas=Paginas
     this.Leido=Leido
-    this.AgregarLibro=function(){ /*Creo todos los elementos HTML correspondientes al libro*/
+    this.AgregarLibro=function(){ Creo todos los elementos HTML correspondientes al libro
         let Libros=document.querySelector(".Libros"),
         Libro=document.createElement("div"),
         titulo=document.createElement("p"),
@@ -22,7 +22,42 @@ function Libro(Titulo,Autor,Paginas,Leido){
         Leido.classList.add("Leido");
         Eliminar.textContent="Eliminar libro";
         Eliminar.classList.add("Eliminar");
-        /*Agrego todos los elementos a sus padres*/
+        Agrego todos los elementos a sus padres
+        Libros.appendChild(Libro);
+        Libro.appendChild(titulo);
+        Libro.appendChild(autor);
+        Libro.appendChild(paginas);
+        Libro.appendChild(Leido);
+        Libro.appendChild(Eliminar);
+        CambiarLeido(Leido);
+        EliminarLibro(Eliminar);
+    }
+}
+*/
+class Libro{
+    constructor(Titulo,Autor,Paginas,Leido){
+        this.Autor=Autor
+        this.Titulo=Titulo
+        this.Paginas=Paginas
+        this.Leido=Leido
+    }
+    AgregarLibro(){
+        let Libros=document.querySelector(".Libros"),
+        Libro=document.createElement("div"),
+        titulo=document.createElement("p"),
+        autor=document.createElement("p"),
+        paginas=document.createElement("p"),
+        Leido=document.createElement("Button"),
+        Eliminar=document.createElement("Button");
+        Libros.classList.add("Libros");
+        Libro.classList.add("Libro");
+        titulo.textContent=this.Titulo;
+        autor.textContent=this.Autor;
+        paginas.textContent=this.Paginas;
+        Leido.textContent="No leído";
+        Leido.classList.add("Leido");
+        Eliminar.textContent="Eliminar libro";
+        Eliminar.classList.add("Eliminar");
         Libros.appendChild(Libro);
         Libro.appendChild(titulo);
         Libro.appendChild(autor);
